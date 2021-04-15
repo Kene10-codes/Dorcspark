@@ -130,14 +130,16 @@ button a {
 
 /* end hero styles */
 
-div#about {
+div#about,
+div#team {
     padding: 1rem 10rem;
     background: #fff;
 }
 div.about-heading,
-div.service-heading {
+div.service-heading,
+div.team-heading,
+div.contact-heading {
     text-align: center;
-    color: #36517e;
     text-transform: uppercase;
     position: relative;
     margin: 40px 0;
@@ -145,7 +147,10 @@ div.service-heading {
 }
 
 .about-heading h2,
-.service-heading h2 {
+.service-heading h2,
+.team-heading h2,
+.contact-heading h2 {
+    color: #36517e;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -166,7 +171,7 @@ div.service-heading {
 }
 
 .about-content p {
-    color: #000;
+    color: 	#696969;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1;
@@ -182,6 +187,7 @@ ul {
 }
 
 ul li {
+    color:#696969;
     list-style-type: none;
     margin: 0;
     padding-bottom: 8px;
@@ -204,11 +210,66 @@ ul li {
 }
 
 
-div#service {
+div#service,
+div#contact {
     padding: 1rem 10rem;
     background: #f4f5fa;
 }
 
-.service-heading p {
-    color: #fff;
+.service-heading p,
+.team-heading p,
+.contact-heading p {
+    color: 	#696969;
+    text-transform: none;
 }
+
+.service-card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+div.card1 {
+    width: 280px;
+    height: 350px;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+.card1 h3 {
+    color: #36517e;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    font-family: 'Jost', sans-serif;;
+}
+
+div.card1 p{
+    color: 	#696969;
+    font-size: 0.9rem;
+    text-transform: none;
+    padding-top: 10px;
+    letter-spacing: 0.8;
+}
+
+div.card1 .fa-code,
+div.card1 .fa-palette,
+div.card1 .fa-video-slash,
+div.card1 .fa-database{
+    padding-top: 25px;
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    color: #47b3e4;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
