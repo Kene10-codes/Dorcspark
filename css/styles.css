@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins&family=Roboto&display=swap');@import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    width: 100vw;
+    height: 10vh;
+    background: #36517e;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 900;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1rem;
+}
+
+li a {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+li a:hover {
+    color: #4677b0;
+    transition: all ease-in-out 0.9s;
+}
+
+li .active {
+    color: #4677b0 !important;
+    font-weight: 500;
+}
+
+
+/* end nav styles */
+
+/* hero styles */
+
+div#hero {
+    padding: 1rem 8rem;
+    background: #36517e;
+    height: 70vh;
+}
+
+div.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2 {
+    color: #fff;
+    font-size: 3.8rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.left p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1;
+    padding-top: 3px;
+}
+
+div.hero-content-btn {
+   margin-top: 50px;
+}
+
+.hero-content-btn button {
+    border: none;
+    border-radius: 20px;
+    background: #47b3e4;
+    padding: 14px;
+    outline: none;
+    width: 150px;
+
+}
+
+button a {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 900;
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 800px;
+    height: auto;
+}
+
+/* end hero styles */
+
+div#about {
+    padding: 1rem 10rem;
+    background: #fff;
+}
+div.about-heading,
+div.service-heading {
+    text-align: center;
+    color: #36517e;
+    text-transform: uppercase;
+    position: relative;
+    margin: 40px 0;
+
+}
+
+.about-heading h2,
+.service-heading h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.about-heading .line {
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    top: 98%;
+    left: 43%;
+    background: #36517e;
+
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-content p {
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1;
+    line-height: 1.4;
+}
+
+.about-content-left {
+    padding-right: 10px;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.about-btn {
+    margin-top: 20px;
+}
+
+.about-btn button {
+    background: none;
+    border: 2px solid  #47b3e4;
+    width: 150px;
+    height: 40px;
+}
+
+.about-btn button a {
+    color: #47b3e4;
+    font-weight: 500;
+}
+
+
+div#service {
+    padding: 1rem 10rem;
+    background: #f4f5fa;
+}
+
+.service-heading p {
+    color: #fff;
+}
