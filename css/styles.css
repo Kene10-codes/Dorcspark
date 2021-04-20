@@ -131,16 +131,17 @@ button a {
 /* end hero styles */
 
 div#about,
-div#team {
+div#team,
+div#newsletter {
     padding: 1rem 10rem;
     background: #fff;
 }
 div.about-heading,
 div.service-heading,
 div.team-heading,
-div.contact-heading {
+div.contact-heading,
+div.newsletter-heading {
     text-align: center;
-    text-transform: uppercase;
     position: relative;
     margin: 40px 0;
 
@@ -153,6 +154,7 @@ div.contact-heading {
     color: #36517e;
     font-size: 2rem;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .about-heading .line {
@@ -162,7 +164,6 @@ div.contact-heading {
     top: 98%;
     left: 43%;
     background: #36517e;
-
 }
 
 .about-content {
@@ -174,7 +175,7 @@ div.contact-heading {
     color: 	#696969;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 1;
+    letter-spacing: 0.9;
     line-height: 1.4;
 }
 
@@ -211,14 +212,16 @@ ul li {
 
 
 div#service,
-div#contact {
+div#contact,
+div#footer {
     padding: 1rem 10rem;
     background: #f4f5fa;
 }
 
 .service-heading p,
 .team-heading p,
-.contact-heading p {
+.contact-heading p,
+.newsletter-heading p {
     color: 	#696969;
     text-transform: none;
 }
@@ -227,13 +230,14 @@ div#contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
 }
 
 div.card1 {
     width: 280px;
-    height: 350px;
+    height: 320px;
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin: 10px;
     border-radius: 2px;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
@@ -269,7 +273,118 @@ div.card1 .fa-database{
 
 .contact-card {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-card .box{
+    display: flex;
+    margin: 50px;
+    
+}
+
+.box h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: 'Jost', sans-serif;
+    color: #36517e;
+    padding-bottom: 10px;
+
+}
+
+.box p {
+    color: #47b3e4;
+    font-size: 0.9rem;
+}
+
+.contact-card .fa-map-marker-alt,
+.contact-card .fa-envelope,
+.contact-card .fa-phone-alt {
+    width: 45px;
+    height: 45px;
+    color: #47b3e4;
+    background: #e7f4fa;
+    padding: 13px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.newsletter-heading h2  {
+    color: #36517e;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 15px 0;
+
+}
+
+div.form {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+form input[type="email"]{
+    text-align: left;
+    border-radius: 25px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: hsl(0, 0%, 100%);
+    padding: 8px;
+    margin: 0;
+}
+
+form input[type="email"]::placeholder {
+    color: gray;
+    font-size: 0.9rem;
+    font-family: 'Jost', sans-serif;
+}
+
+form button {
+    color: #fff;
+    background: #47b3e4;
+    height: 40px;
+    width: 110px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+form input:invalid {
+    border: 2px solid red;
+}
+
+form input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+form input:valid {
+    border: 2px solid #47b3e4;
+}
+
+div.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+
+div.footer-content .text {
+    color: #36517e;
+    font-size: 1.75rem;
+    font-weight: 900;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 3;
+    text-transform: uppercase;
+}
+
+div.footer-content h2 {
+    color: #36517e;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: 'Jost', sans-serif;
+}
